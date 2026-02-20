@@ -35,7 +35,6 @@ $ sudo apt install git debhelper dh-sysuser protobuf-c-compiler \
                  build-essential dh-autoreconf dpkg-dev libev-dev \
                  libudns-dev pkg-config libglib2.0-dev sysuser-helper 
 
-Only on Trixie and Forky:  $ sudo apt install libgcc-14-dev 
 
 $ sudo reboot
 
