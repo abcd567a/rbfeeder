@@ -40,7 +40,10 @@ $ sudo reboot
 
 $ git clone --depth 1 https://github.com/abcd567a/rbfeeder.git
 $ cd rbfeeder
-$ sudo dpkg-buildpackage -b 
+$ sudo dpkg-buildpackage -b
+
+$ cd ../ 
+
 ```
 
 ## Building under Ubuntu (jammy and noble)
@@ -63,9 +66,17 @@ $ git clone --depth 1 https://github.com/abcd567a/rbfeeder.git
 $ cd rbfeeder
 $ sudo dpkg-buildpackage -b 
 
+$ cd ../
+
 ```
 
 ## INSTALLING
+The build package is not in cloned folder "rbfeeder". It is in folder one level above it. </br>
+If you are still inside cloned folder "rbfeeder", then issue following command to go to folder one level above </br>
+```
+$ cd ../
+```
+Now issue following commands to install rbfeeder: </br>
 
 ```bash
 $ sudo dpkg -i rbfeeder_1.0.20_*.deb
