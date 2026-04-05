@@ -1,16 +1,28 @@
 Source: rbfeeder
-Section: misc
+Section: net
 Priority: optional
-Maintainer: Airnav Systems <dev@airnavsystems.com>
-Build-Depends: debhelper (>= 9)
-Standards-Version: 3.9.5
-Homepage: http://www.radarbox24.com
-Vcs-Git: https://github.com/AirNav-Systems/rbfeeder
-Vcs-Browser: https://github.com/AirNav-Systems/rbfeeder
+Maintainer: abcd567a <abcd567a@user.noreply.github.com>
+Build-Depends:
+ debhelper (>= 12),
+ dh-sysuser,
+ protobuf-c-compiler,
+ libncurses5-dev,
+ libncursesw5-dev,
+ libjansson-dev,
+ libprotobuf-c-dev,
+ libcurl4-openssl-dev,
+ librtlsdr-dev,
+ dh-autoreconf,
+ dpkg-dev,
+ libev-dev,
+ libudns-dev,
+ pkg-config,
+ libglib2.0-dev,
+ sysuser-helper
+Standards-Version: 4.6.2
 
 Package: rbfeeder
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, systemd, dh-sysuser
-Description: Software for uploading ADS-B data to RadarBox24.com
- This software is used for sending ADS-B data to RadarBox24.com
- website. 
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: RadarBox ADS-B feeder client
+ A client for feeding ADS-B data to RadarBox. Supports RTL-SDR and network mode.
