@@ -33,7 +33,7 @@ $ sudo apt install git debhelper dh-sysuser protobuf-c-compiler \
                  libncurses5-dev libncursesw5-dev libjansson-dev \
                  libprotobuf-c-dev libcurl4-openssl-dev librtlsdr-dev \
                  build-essential dh-autoreconf dpkg-dev libev-dev \
-                 libudns-dev pkg-config libglib2.0-dev sysuser-helper 
+                 libudns-dev pkg-config libglib2.0-dev 
 
 
 $ sudo reboot
@@ -50,9 +50,8 @@ $ sudo apt update
 $ sudo apt install git debhelper dh-sysuser protobuf-c-compiler \
                  libncurses5-dev libncursesw5-dev libjansson-dev \
                  libprotobuf-c-dev libcurl4-openssl-dev librtlsdr-dev \
-                 build-essential dh-autoreconf dpkg-dev \
-                 libev-dev libudns-dev \
-                 pkg-config libglib2.0-dev sysuser-helper
+                 build-essential dh-autoreconf dpkg-dev libev-dev \
+                 libudns-dev pkg-config libglib2.0-dev
 
 Only on Noble: $ sudo apt install libgcc-14-dev libpcre3-dev librtlsdr2
 Only on Jammy: $ sudo apt install librtlsdr0 
