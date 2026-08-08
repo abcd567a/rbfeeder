@@ -17,8 +17,7 @@ Build-Depends:
  libev-dev,
  libudns-dev,
  pkg-config,
- libglib2.0-dev,
- sysuser-helper
+ libglib2.0-dev
 Standards-Version: 4.6.2
 
 Package: rbfeeder
