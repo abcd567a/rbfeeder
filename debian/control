@@ -6,7 +6,7 @@ Build-Depends:
  debhelper (>= 12),
  dh-sysuser,
  protobuf-c-compiler,
- libncurses5-dev,
+ libncurses-dev,
  libjansson-dev,
  libprotobuf-c-dev,
  libcurl4-openssl-dev,
