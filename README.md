@@ -36,11 +36,10 @@ $ sudo apt install git debhelper dh-sysuser protobuf-c-compiler \
                  libudns-dev pkg-config libglib2.0-dev 
 
 
-$ sudo reboot
-
 $ git clone --depth 1 https://github.com/abcd567a/rbfeeder.git
 $ cd rbfeeder
-$ sudo dpkg-buildpackage -b 
+$ sudo dpkg-buildpackage -b
+$ cd ../
 ```
 
 ## Building under Ubuntu (jammy and noble)
@@ -56,12 +55,11 @@ $ sudo apt install git debhelper dh-sysuser protobuf-c-compiler \
 Only on Noble: $ sudo apt install libgcc-14-dev libpcre3-dev librtlsdr2
 Only on Jammy: $ sudo apt install librtlsdr0 
 
-$ sudo reboot
 
 $ git clone --depth 1 https://github.com/abcd567a/rbfeeder.git
 $ cd rbfeeder
-$ sudo dpkg-buildpackage -b 
-
+$ sudo dpkg-buildpackage -b
+$ cd ../ 
 ```
 
 ## INSTALLING
