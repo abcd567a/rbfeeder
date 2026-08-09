@@ -7,15 +7,10 @@ Build-Depends:
  dh-sysuser,
  protobuf-c-compiler,
  libncurses5-dev,
- libncursesw5-dev,
  libjansson-dev,
  libprotobuf-c-dev,
  libcurl4-openssl-dev,
  librtlsdr-dev,
- dh-autoreconf,
- dpkg-dev,
- libev-dev,
- libudns-dev,
  pkg-config,
  libglib2.0-dev
 Standards-Version: 4.6.2
