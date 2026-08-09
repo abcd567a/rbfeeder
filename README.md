@@ -29,12 +29,10 @@ $ dpkg-buildpackage -b --no-sign
 
 ```bash
 $ sudo apt update 
-$ sudo apt install git debhelper dh-sysuser protobuf-c-compiler \
-                 libncurses5-dev libncursesw5-dev libjansson-dev \
-                 libprotobuf-c-dev libcurl4-openssl-dev librtlsdr-dev \
-                 build-essential dh-autoreconf dpkg-dev libev-dev \
-                 libudns-dev pkg-config libglib2.0-dev 
-
+$ sudo apt install git build-essential debhelper \
+  dh-sysuser protobuf-c-compiler libjansson-dev \
+  libprotobuf-c-dev libcurl4-openssl-dev \
+  librtlsdr-dev pkg-config libglib2.0-dev
 
 $ git clone --depth 1 https://github.com/abcd567a/rbfeeder.git
 $ cd rbfeeder
