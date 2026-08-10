@@ -25,7 +25,8 @@ $ sudo apt-get install build-essential fakeroot debhelper librtlsdr-dev pkg-conf
 $ dpkg-buildpackage -b --no-sign
 ```
 
-## Building under Debian (bookworm, trixie, and forky)
+
+## Building under:<br>Debian (bookworm, trixie, and forky)<br>Ubuntu (jammy, noble, and resolute)
 
 ```bash
 $ sudo apt update 
@@ -38,26 +39,6 @@ $ git clone --depth 1 https://github.com/abcd567a/rbfeeder.git
 $ cd rbfeeder
 $ sudo dpkg-buildpackage -b
 $ cd ../
-```
-
-## Building under Ubuntu (jammy and noble)
-
-```bash
-$ sudo apt update 
-$ sudo apt install git debhelper dh-sysuser protobuf-c-compiler \
-                 libncurses5-dev libncursesw5-dev libjansson-dev \
-                 libprotobuf-c-dev libcurl4-openssl-dev librtlsdr-dev \
-                 build-essential dh-autoreconf dpkg-dev libev-dev \
-                 libudns-dev pkg-config libglib2.0-dev
-
-Only on Noble: $ sudo apt install libgcc-14-dev libpcre3-dev librtlsdr2
-Only on Jammy: $ sudo apt install librtlsdr0 
-
-
-$ git clone --depth 1 https://github.com/abcd567a/rbfeeder.git
-$ cd rbfeeder
-$ sudo dpkg-buildpackage -b
-$ cd ../ 
 ```
 
 ## INSTALLING
